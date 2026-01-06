@@ -1,4 +1,4 @@
-CFLAGS = -Wall -pedantic -O3 -march=native
+CFLAGS = -Wall -pedantic -O3 -march=native -I./simde
 
 wc-avx2: wc-avx2.c
 	$(CC) $(CFLAGS) $< -o $@
