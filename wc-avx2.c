@@ -7,7 +7,7 @@
 #define SIMDE_ENABLE_NATIVE_ALIASES
 #include "simde/x86/avx2.h"
 
-int main() {
+int main(void) {
   char buf_unaligned[BUF_SIZE + 32];
   char *buf = (char *)(((uintptr_t)buf_unaligned + 31) & -32);
   size_t num_words = 0;
