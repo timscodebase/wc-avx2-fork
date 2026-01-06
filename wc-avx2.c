@@ -3,7 +3,9 @@
 #include <stdint.h>
 #include <stdio.h>
 #include <ctype.h>
-#include <immintrin.h>
+
+#define SIMDE_ENABLE_NATIVE_ALIASES
+#include "simde/x86/avx2.h"
 
 int main() {
   char buf_unaligned[BUF_SIZE + 32];
